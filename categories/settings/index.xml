@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>settings on darcyjoven&#39;s</title>
+    <link>http://darcyjoven.gitee.io/categories/settings/</link>
+    <description>Recent content in settings on darcyjoven&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Dec 2021 12:43:36 +0800</lastBuildDate><atom:link href="http://darcyjoven.gitee.io/categories/settings/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>图片文章 demo</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-20-1/</link>
+      <pubDate>Mon, 20 Dec 2021 12:43:36 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-20-1/</guid>
+      <description>插件 paste image 设置 设置基础根路径 设置保存得目录 设置前置&amp;quot;/&amp;quot;，默认是没有 粘贴样式 文件路径 PS:markdown直接预览，无法解</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <style type="text/css" media="print">
+  .post-reward{display: none;} 
+  .post-nav{display: none;} 
+  .utterances-frame{display: none;}
+  #header { display: none; }  
+  #footer { display: none; }   
+  </style>
+  <title>TIPTOP运算符 - darcyjoven&#39;s</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="darcy" /><meta name="description" content="比较运算 运算符 说明 示例 IS NULL 空白 IF a IS NULL THEN… LIKE 符合指定语法 IF &amp;ldquo;abcdef&amp;rdquo; LIKE &amp;ldquo;a%e_&amp;rdquo; THEN MATCHES 符合其中一项 IF a MATCHES “[1234]” THEN ==、= 等于 IF a == 10 THEN &amp;hellip; !=、" /><meta name="keywords" content="darcy, joven, even" />
+
+
+<meta name="baidu-site-verification" content="code-YS76YRvZbp" />
+<meta name="google-site-verification" content="EA25Tgvd7yOzk2AblC1MkJxBLbLeu6REKpdbpNvCzhY" />
+
+
+<meta name="generator" content="Hugo 0.90.1 with theme even" />
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.css" />
+<link rel="canonical" href="http://darcyjoven.gitee.io/post/2021-12-24-1/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/sass/main.min.b5a744db6de49a86cadafb3b70f555ab443f83c307a483402259e94726b045ff.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="TIPTOP运算符" />
+<meta property="og:description" content="比较运算 运算符 说明 示例 IS NULL 空白 IF a IS NULL THEN… LIKE 符合指定语法 IF &ldquo;abcdef&rdquo; LIKE &ldquo;a%e_&rdquo; THEN MATCHES 符合其中一项 IF a MATCHES “[1234]” THEN ==、= 等于 IF a == 10 THEN &hellip; !=、" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://darcyjoven.gitee.io/post/2021-12-24-1/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2021-12-24T14:07:00+08:00" />
+<meta property="article:modified_time" content="2021-12-24T00:00:00+00:00" />
+
+<meta itemprop="name" content="TIPTOP运算符">
+<meta itemprop="description" content="比较运算 运算符 说明 示例 IS NULL 空白 IF a IS NULL THEN… LIKE 符合指定语法 IF &ldquo;abcdef&rdquo; LIKE &ldquo;a%e_&rdquo; THEN MATCHES 符合其中一项 IF a MATCHES “[1234]” THEN ==、= 等于 IF a == 10 THEN &hellip; !=、"><meta itemprop="datePublished" content="2021-12-24T14:07:00+08:00" />
+<meta itemprop="dateModified" content="2021-12-24T00:00:00+00:00" />
+<meta itemprop="wordCount" content="920">
+<meta itemprop="keywords" content="TIPTOP," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="TIPTOP运算符"/>
+<meta name="twitter:description" content="比较运算 运算符 说明 示例 IS NULL 空白 IF a IS NULL THEN… LIKE 符合指定语法 IF &ldquo;abcdef&rdquo; LIKE &ldquo;a%e_&rdquo; THEN MATCHES 符合其中一项 IF a MATCHES “[1234]” THEN ==、= 等于 IF a == 10 THEN &hellip; !=、"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">DarcyJoven</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <li style="display:inline-block;margin-right:10px;">
+    <input type="search" class="mob-docsearch-input" placeholder="Search" />
+</li><a href="/">
+        <li class="mobile-menu-item">首页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">列表</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">DarcyJoven</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li style="display:inline-block;margin-right:10px;">
+    <input type="search" class="docsearch-input" placeholder="Search" />
+  </li><li class="menu-item">
+        <a class="menu-item-link" href="/">首页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">列表</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+
+
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">TIPTOP运算符</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2021-12-24 </span>
+        <div class="post-category">
+            <a href="/categories/tiptop/"> TIPTOP </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc" style="user-select: none;">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#比较运算">比较运算</a></li>
+        <li><a href="#数值运算">数值运算</a></li>
+        <li><a href="#字符串运算">字符串运算</a>
+          <ul>
+            <li><a href="#using">USING</a></li>
+          </ul>
+        </li>
+        <li><a href="#日期运算">日期运算</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p><a name="IlL8l"></a></p>
+<h2 id="比较运算">比较运算</h2>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>IS NULL</td>
+<td>空白</td>
+<td>IF a IS NULL THEN…</td>
+</tr>
+<tr>
+<td>LIKE</td>
+<td>符合指定语法</td>
+<td>IF &ldquo;abcdef&rdquo; LIKE &ldquo;a%e_&rdquo; THEN</td>
+</tr>
+<tr>
+<td>MATCHES</td>
+<td>符合其中一项</td>
+<td>IF a MATCHES “[1234]” THEN</td>
+</tr>
+<tr>
+<td>==、=</td>
+<td>等于</td>
+<td>IF a == 10 THEN  &hellip;</td>
+</tr>
+<tr>
+<td>!=、&lt;&gt;</td>
+<td>不等于</td>
+<td>IF a != 10 THEN…</td>
+</tr>
+<tr>
+<td>&lt;、&lt;=</td>
+<td>小于，小于等于</td>
+<td>IF a &lt;= 10 THEN</td>
+</tr>
+<tr>
+<td>&gt;、&gt;=</td>
+<td>大于，大于等于</td>
+<td>IF a &gt;= 10 THEN</td>
+</tr>
+<tr>
+<td>NVL(a,b)</td>
+<td>a为NULL，就把b值赋给a</td>
+<td></td>
+</tr>
+<tr>
+<td>IIF(a,b,c)</td>
+<td>三元表达式</td>
+<td></td>
+</tr>
+<tr>
+<td>:=</td>
+<td>指定值</td>
+<td>LET a = b := 10</td>
+</tr>
+<tr>
+<td>NOT</td>
+<td>非</td>
+<td>IF NOT a = b THEN…</td>
+</tr>
+<tr>
+<td>AND</td>
+<td>与</td>
+<td>IF a = b AND c = d THEN…</td>
+</tr>
+<tr>
+<td>OR</td>
+<td>或</td>
+<td>IF a = b OR c = d THEN…</td>
+</tr>
+</tbody>
+</table>
+<p><a name="crQi9"></a></p>
+<h2 id="数值运算">数值运算</h2>
+<p><a name="geQFs"></a></p>
+<h2 id="字符串运算">字符串运算</h2>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>,</td>
+<td>字串连接，可连接空字符串</td>
+<td>LET a = a, b</td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>[start,end]</td>
+<td>截取字符串一部分</td>
+<td>LET a = a[1,10]</td>
+</tr>
+<tr>
+<td>USING</td>
+<td>格式化字符串</td>
+<td>LET a = a USING “###”</td>
+</tr>
+<tr>
+<td>CLIPPED</td>
+<td>消除尾部空白</td>
+<td>LET a = a CLIPPED</td>
+</tr>
+<tr>
+<td>SPACES</td>
+<td>输出空白字符</td>
+<td>LET a = 10 SPACES</td>
+</tr>
+<tr>
+<td>ASCII()</td>
+<td>已ASCII输入文字</td>
+<td>LET a = ASCII 37</td>
+</tr>
+<tr>
+<td>ORD()</td>
+<td>取字符ASCII码</td>
+<td>LET I = ORD( “A” )</td>
+</tr>
+<tr>
+<td>LSTR()</td>
+<td>取本地化字符串</td>
+<td>DISPLAY LSTR (&ldquo;str&rdquo;)</td>
+</tr>
+<tr>
+<td>SFMR(&hellip;)</td>
+<td>字符串拼接</td>
+<td>SFMT(&ldquo;Order #%1 has been %2.&quot;,n,&ldquo;deleted&rdquo;)</td>
+</tr>
+</tbody>
+</table>
+<p><a name="Wx92a"></a></p>
+<h3 id="using">USING</h3>
+<blockquote>
+<p>USING 可以针对数值和日期设置字符串显示格式，使用要注意溢出问题。</p>
+</blockquote>
+<p><a name="Wo4um"></a></p>
+<h4 id="数值格式标识">数值格式标识</h4>
+<table>
+<thead>
+<tr>
+<th>*</th>
+<th>空白的地方用*显示</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&amp;</td>
+<td>空白的地方用0显示</td>
+</tr>
+<tr>
+<td>#</td>
+<td>无影响，但限制字符的输出最大长度</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>数字向左靠</td>
+</tr>
+<tr>
+<td>,</td>
+<td>指定逗号出现位置</td>
+</tr>
+<tr>
+<td>.</td>
+<td>指定小数点出现位置</td>
+</tr>
+<tr>
+<td>-</td>
+<td>当数字小于0加上一个-号</td>
+</tr>
+<tr>
+<td>+</td>
+<td>当数字小于0加上一个-号，当数字大于0加上一个+号</td>
+</tr>
+<tr>
+<td>$</td>
+<td>数值出现一个签字符号</td>
+</tr>
+<tr>
+<td>(</td>
+<td>数值小于0，加上左括号</td>
+</tr>
+<tr>
+<td>)</td>
+<td>素质小于0，加上又括号</td>
+</tr>
+</tbody>
+</table>
+<p><a name="P9g17"></a></p>
+<h4 id="日期格式标识">日期格式标识</h4>
+<table>
+<thead>
+<tr>
+<th>dd</th>
+<th>两位数字表示日期</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ddd</td>
+<td>三位英文表示星期</td>
+</tr>
+<tr>
+<td>mm</td>
+<td>两位数字表示月份</td>
+</tr>
+<tr>
+<td>mmm</td>
+<td>三位英文表示月份</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>2为数字表示年份</td>
+</tr>
+<tr>
+<td>yyyy</td>
+<td>4位数字表示年份</td>
+</tr>
+</tbody>
+</table>
+<p><a name="qlaF6"></a></p>
+<h4 id="示例">示例</h4>
+<p>LET i = 12345<br />LET j = -12345</p>
+<table>
+<thead>
+<tr>
+<th>格式方式</th>
+<th>显示内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DISPLAY i</td>
+<td>&ndash; Display: 12345</td>
+</tr>
+<tr>
+<td>DISPLAY j</td>
+<td>&ndash; Display: -12345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&rdquo;***&quot;</td>
+<td>&ndash; Display:**12345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;***&quot;</td>
+<td>&ndash; Display:**12345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&quot;</td>
+<td>&ndash; Display:0012345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&quot;</td>
+<td>&ndash; Display:0012345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;#######&quot;</td>
+<td>&ndash; Display: 12345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;#######&quot;</td>
+<td>&ndash; Display: 12345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;&laquo;&laquo;&laquo;&lt;&quot;</td>
+<td>&ndash; Display:12345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;&laquo;&laquo;&laquo;&lt;&quot;</td>
+<td>&ndash; Display:12345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;&mdash;&mdash;-&quot;</td>
+<td>&ndash; Display: 12345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;&mdash;&mdash;-&quot;</td>
+<td>&ndash; Display: -12345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;+++++++&quot;</td>
+<td>&ndash; Display: +12345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;+++++++&quot;</td>
+<td>&ndash; Display: -12345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;$$$$$$$&quot;</td>
+<td>&ndash; Display: $12345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;$$$$$$$&quot;</td>
+<td>&ndash; Display: $12345</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;(######)&quot;</td>
+<td>&ndash; Display: 12345</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;(######)&quot;</td>
+<td>&ndash; Display:( 12345)</td>
+</tr>
+<tr>
+<td>DISPLAY i USING&quot;###,###.&amp;&amp;&quot;</td>
+<td>&ndash; Display: 12,345.00</td>
+</tr>
+<tr>
+<td>DISPLAY j USING&quot;###,###.&amp;&amp;&quot;</td>
+<td>&ndash; Display: 12,345.00</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>格式方式</th>
+<th>显示内容</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DISPLAY TODAY USING &ldquo;yyyy-mm-dd&rdquo;</td>
+<td>&ndash; Display 2004-06-15</td>
+</tr>
+<tr>
+<td>DISPLAY TODAY USING &ldquo;yy-mm-dd&rdquo;</td>
+<td>&ndash; Display 04-06-15</td>
+</tr>
+<tr>
+<td>DISPLAY TODAY USING &ldquo;yy-mmm-ddd</td>
+<td>&ndash; Display 04-Jun-Tue</td>
+</tr>
+</tbody>
+</table>
+<p><a name="mhJeD"></a></p>
+<h2 id="日期运算">日期运算</h2>
+<table>
+<thead>
+<tr>
+<th>运算符</th>
+<th>说明</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>TODAY</td>
+<td>取出今天日期</td>
+<td>LET a = TODAY( )</td>
+</tr>
+<tr>
+<td>CURRENT</td>
+<td>获取当前日期和时间</td>
+<td>LET a = CURRENT</td>
+</tr>
+<tr>
+<td>DATE( )</td>
+<td>转化为日期格式</td>
+<td>LET a = DATE( &ldquo;07/31/2005&rdquo; )</td>
+</tr>
+<tr>
+<td>MDY( )</td>
+<td>构造日期</td>
+<td>LET a= MDY( 07, 31, 2005 )</td>
+</tr>
+<tr>
+<td>TIME( )</td>
+<td>取出时间（hh:mm:ss）</td>
+<td>LET a = TIME ( CURRENT )</td>
+</tr>
+<tr>
+<td>YEAR( )</td>
+<td>取出年</td>
+<td>LET a = YEAR( CURRENT )</td>
+</tr>
+<tr>
+<td>MONTH( )</td>
+<td>取出月</td>
+<td>LET a = MONTH( CURRENT )</td>
+</tr>
+<tr>
+<td>DAY( )</td>
+<td>取出日</td>
+<td>LET a = DAY( CURRENT )</td>
+</tr>
+<tr>
+<td>WEEKDAY( )</td>
+<td>获取今天是周几</td>
+<td>LET a = WEEKDAY(CURRENT)</td>
+</tr>
+<tr>
+<td>EXTEND(a, b TO c )</td>
+<td>将a日期调整为(b TO c)的格式</td>
+<td>DISPLAY EXTEND ( TODAY, YEAR TO FRACTION(4) )</td>
+</tr>
+<tr>
+<td>UNITS</td>
+<td>数值转化为 interval*</td>
+<td>LET a = 10 + (20 UNITS MINUTES)</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">darcy</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">
+        2021-12-24
+        
+    </span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a rel="license noopener" href="https://en.wikipedia.org/wiki/Wikipedia:Text_of_Creative_Commons_Attribution-ShareAlike_3.0_Unported_License" target="_blank">Creative Commons Attribution-ShareAlike License</a></span>
+  </p>
+</div>
+<div class="post-reward">
+  <input type="checkbox" name="reward" id="reward" hidden />
+  <label class="reward-button" for="reward">赞赏支持</label>
+  <div class="qr-code">
+    
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/wechat.png">
+        <span>微信打赏</span>
+      </label>
+    <label class="qr-code-image" for="reward">
+        <img class="image" src="/alipay.png">
+        <span>支付宝打赏</span>
+      </label>
+  </div>
+</div><footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/tiptop/">TIPTOP</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/post/2021-12-31-1/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">script 测试</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/post/2021-12-22-1/">
+            <span class="next-text nav-default">测试索引文章</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+  
+
+  
+    <script src="https://utteranc.es/client.js"
+            repo="darcyjoven/blog-comments"
+            issue-term="pathname"
+            theme="github-light"
+            crossorigin="anonymous"
+            async>
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://github.com/utterance">comments powered by utterances.</a></noscript>
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="darcy_joven@live.com" class="iconfont icon-email" title="email"></a>
+      <a href="darcyjoven@gmail.com" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/darcyjoven" class="iconfont icon-github" title="github"></a>
+  <a href="http://darcyjoven.gitee.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2021 - 
+    2022<span class="heart"><i class="iconfont icon-heart"></i></span><span>DarcyJoven</span>
+  </span>
+  <span id ="timecount" class="heart">已经天了！</span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script>
+docsearch({
+    apiKey: "ef9667e0cd9b79d07c1ea16187ff7c8b",
+    indexName: "blog_index",
+    appId: "G181U16T8Q",
+    inputSelector: '.docsearch-input',
+    debug: false,
+});
+docsearch({
+    apiKey: "ef9667e0cd9b79d07c1ea16187ff7c8b",
+    indexName: "blog_index",
+    appId: "G181U16T8Q",
+    inputSelector: '.mob-docsearch-input',
+    debug: false,
+}); 
+
+
+
+
+
+
+</script><script> 
+timecount = document.getElementById("timecount");
+function count(pyear,pmonth,pday,phour,pmin,psec,ptext){
+  let timenow = new Date();
+  let dabeginday = new Date();
+  dabeginday.setFullYear(pyear, pmonth-1, pday);
+  dabeginday.setHours(phour);
+  dabeginday.setMinutes(pmin);
+  dabeginday.setSeconds(psec);
+
+  let between = timenow - dabeginday
+  
+  let day = parseInt( between / 86400000); 
+  let hour = parseInt((between -  day*86400000)/3600000); 
+  let min = parseInt((between -  day*86400000 - hour*3600000 )/60000 ); 
+
+  let secends = parseInt((between - day*86400000 - hour*3600000 - min*60000)/1000); 
+  
+
+  return  `${ptext}${day}天${hour}小时${min}分${secends}秒了！`
+}
+setInterval(() => {
+  timecount.innerHTML=count( 2019 ,
+   11 ,
+   18 ,
+   16 ,
+   0 ,
+   0 ,
+  "我们在一起已经"
+  )
+}, 1000);
+</script>
+
+
+
+<script type="text/javascript" src="/js/main.min.c99b103c33d1539acf3025e1913697534542c4a5aa5af0ccc20475ed2863603b.js"></script>
+
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?code-YS76YRvZbp";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+<script id="baidu_push">
+  (function(){
+    if (window.location.hostname === 'localhost') return;
+    var bp = document.createElement('script'); bp.async = true;
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+      bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+    }
+    else {
+      bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+  })();
+</script>
+
+
+
+
+</body>
+</html>

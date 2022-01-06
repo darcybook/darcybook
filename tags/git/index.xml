@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>git on darcyjoven&#39;s</title>
+    <link>http://darcyjoven.gitee.io/tags/git/</link>
+    <description>Recent content in git on darcyjoven&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Dec 2021 13:09:40 +0800</lastBuildDate><atom:link href="http://darcyjoven.gitee.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>git 忽略已上传文件</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-20-3/</link>
+      <pubDate>Mon, 20 Dec 2021 13:09:40 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-20-3/</guid>
+      <description>之前已经push过的文件，已存在版本信息，不能直接忽略 利用命令git rm -r --cached 要忽略的文件/文件夹忽略之后，重新commit和push</description>
+    </item>
+    
+  </channel>
+</rss>

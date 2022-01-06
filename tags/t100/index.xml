@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>T100 on darcyjoven&#39;s</title>
+    <link>http://darcyjoven.gitee.io/tags/t100/</link>
+    <description>Recent content in T100 on darcyjoven&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Dec 2021 17:05:09 +0800</lastBuildDate><atom:link href="http://darcyjoven.gitee.io/tags/t100/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>u1磁盘空间不足导致复制账套失败 解决办法</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-20-7/</link>
+      <pubDate>Mon, 20 Dec 2021 17:05:09 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-20-7/</guid>
+      <description>u1磁盘空间不足导致复制账套失败 情况适用于以下情况： 复制账套时，报错 EXP-00002: error in writing to export file 最后导出失败 如何判断是否是磁盘空间不足的2种方法 1.重新运</description>
+    </item>
+    
+    <item>
+      <title>ERP网络要求</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-20-6/</link>
+      <pubDate>Mon, 20 Dec 2021 16:45:39 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-20-6/</guid>
+      <description>VPN和内部的网络访问只能是路由或是交换的方式，不能做NAT 客户端telnet到服务器后，在服务器端通过 echo $FGLSERVER 指令可以看到客户端VPN的IP 从</description>
+    </item>
+    
+    <item>
+      <title>TIPTOP分析效能原理和实践</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-20-5/</link>
+      <pubDate>Mon, 20 Dec 2021 16:36:14 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-20-5/</guid>
+      <description>DEBUG过程中记录日志，分析效能办法 TOGP GP与T100 自带效能工具r.r2d+/r.h，只能直接运行作业，如果有特殊情况只能debug运行作</description>
+    </item>
+    
+    <item>
+      <title>42r/42x文件功能</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-20-4/</link>
+      <pubDate>Mon, 20 Dec 2021 16:23:31 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-20-4/</guid>
+      <description>42x/42r 是半文字的文件，功能在于标识function 在哪个42m文件中。至于42m是是通过全局变量FGLLDPATH进行逐个寻找。 程序运行后，从M</description>
+    </item>
+    
+  </channel>
+</rss>

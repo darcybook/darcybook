@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linux on darcyjoven&#39;s</title>
+    <link>http://darcyjoven.gitee.io/categories/linux/</link>
+    <description>Recent content in linux on darcyjoven&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 20 Dec 2021 17:05:09 +0800</lastBuildDate><atom:link href="http://darcyjoven.gitee.io/categories/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>u1磁盘空间不足导致复制账套失败 解决办法</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-20-7/</link>
+      <pubDate>Mon, 20 Dec 2021 17:05:09 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-20-7/</guid>
+      <description>u1磁盘空间不足导致复制账套失败 情况适用于以下情况： 复制账套时，报错 EXP-00002: error in writing to export file 最后导出失败 如何判断是否是磁盘空间不足的2种方法 1.重新运</description>
+    </item>
+    
+  </channel>
+</rss>

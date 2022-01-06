@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>test on darcyjoven&#39;s</title>
+    <link>http://darcyjoven.gitee.io/categories/test/</link>
+    <description>Recent content in test on darcyjoven&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 22 Dec 2021 11:47:16 +0800</lastBuildDate><atom:link href="http://darcyjoven.gitee.io/categories/test/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>测试索引文章</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-22-1/</link>
+      <pubDate>Wed, 22 Dec 2021 11:47:16 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-22-1/</guid>
+      <description>标题1 ERP JSON</description>
+    </item>
+    
+  </channel>
+</rss>

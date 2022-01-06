@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TIPTOP on darcyjoven&#39;s</title>
+    <link>http://darcyjoven.gitee.io/categories/tiptop/</link>
+    <description>Recent content in TIPTOP on darcyjoven&#39;s</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Fri, 24 Dec 2021 14:07:00 +0800</lastBuildDate><atom:link href="http://darcyjoven.gitee.io/categories/tiptop/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TIPTOP运算符</title>
+      <link>http://darcyjoven.gitee.io/post/2021-12-24-1/</link>
+      <pubDate>Fri, 24 Dec 2021 14:07:00 +0800</pubDate>
+      
+      <guid>http://darcyjoven.gitee.io/post/2021-12-24-1/</guid>
+      <description>比较运算 运算符 说明 示例 IS NULL 空白 IF a IS NULL THEN… LIKE 符合指定语法 IF &amp;ldquo;abcdef&amp;rdquo; LIKE &amp;ldquo;a%e_&amp;rdquo; THEN MATCHES 符合其中一项 IF a MATCHES “[1234]” THEN ==、= 等于 IF a == 10 THEN &amp;hellip; !=、</description>
+    </item>
+    
+  </channel>
+</rss>
